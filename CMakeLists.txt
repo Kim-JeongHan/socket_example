@@ -43,12 +43,12 @@ add_executable(socket "src/main.cpp")
 target_link_libraries(socket ${PROJECT_NAME}_lib)
 
 add_executable(ntoh "src/ntoh.cpp")
-
+add_executable(inet_aton "src/inet_aton.cpp")
 
 ##############################################################################
 # install
 ##############################################################################
 install(
-    TARGETS ${PROJECT_NAME}_lib socket ntoh
+    TARGETS ${PROJECT_NAME}_lib socket ntoh inet_aton
     DESTINATION lib/${PROJECT_NAME}
 )
